@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+}
+
+.dashboard {
+    grid-column: 1/2;
+}
+
+.header {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.cards {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.announcement {
+    
+}
+
+.trending {}
