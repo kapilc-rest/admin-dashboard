@@ -14,13 +14,23 @@
     color: white;
     grid-column: 1/2;
     grid-row: 1/-1;
-    span {
+    .link-dashboard {
         font-size: 1.5rem;
         font-weight: bold;
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            fill: currentColor;
+        }
     }
     > * {
         font-weight: bold;
     }
+}
+
+.link {
+    display: flex;
+    align-items: center;
 }
 
 .header {
