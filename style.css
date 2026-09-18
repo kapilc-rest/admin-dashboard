@@ -23,8 +23,6 @@
     grid-row: 2/3;
 }
 
-.announcement {
-    
+.sidebar {
+    grid-column: 3/4;
 }
-
-.trending {}
