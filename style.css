@@ -176,11 +176,12 @@
 /* =====CARDS===== */
 .cards-section {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: auto;
     padding: 2rem 1rem;
     grid-column: 2/3;
     grid-row: 2/3;
-    gap: 1rem;
+    gap: 1.5rem;
     span {
         max-height: 1.5rem;
         grid-column: 1/-1;
@@ -190,17 +191,25 @@
 }
 
 .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-group {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-column: 1/2;
+    grid-row: 1/2;
     /* sizes each row to content and no extra stretching of space */
     align-content: start; 
-    gap: 1rem;
+    gap: 1.5rem;
     .card {
         padding: 1rem;
         background-color: white;
         border-radius: .5rem;
         border-left: .5rem solid yellow;
+        min-height: 150px;
     }
 }
 
@@ -213,20 +222,21 @@
     font-size: .85rem;
 }
 
-.card-icons {
+.card-icon {
     width: 1rem;
     height: 1rem;
 }
 
 .sidebar-panel {
     grid-column: 2/3;
+    grid-row: 1/2;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "announcement" 
         "trending";
     align-content: start; 
-    gap: 1rem;
+    gap: 1.5rem;
     .announcement {
         grid-area: announcement;
     }
