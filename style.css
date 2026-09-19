@@ -176,7 +176,7 @@
 /* =====CARDS===== */
 .cards-section {
     display: grid;
-    grid-template-columns: 70vh 30vh;
+    grid-template-columns: 3fr 1fr;
     padding: 2rem 1rem;
     grid-column: 2/3;
     grid-row: 2/3;
@@ -215,5 +215,5 @@
 }
 
 .sidebar-panel {
-    grid-column: 3/4;
+    grid-column: 2/3;
 }
