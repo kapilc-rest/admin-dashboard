@@ -180,6 +180,13 @@
     padding: 2rem 1rem;
     grid-column: 2/3;
     grid-row: 2/3;
+    gap: 1rem;
+    span {
+        max-height: 1.5rem;
+        grid-column: 1/-1;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
 }
 
 .cards {
@@ -188,11 +195,6 @@
     grid-column: 1/2;
     /* sizes each row to content and no extra stretching of space */
     align-content: start; 
-    > span {
-        max-height: 1.5rem;
-        grid-column: 1/-1;
-        font-weight: bold;
-    }
     gap: 1rem;
     .card {
         padding: 1rem;
@@ -224,6 +226,7 @@
         "announcement" 
         "trending";
     align-content: start; 
+    gap: 1rem;
     .announcement {
         grid-area: announcement;
     }
