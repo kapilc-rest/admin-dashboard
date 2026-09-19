@@ -101,6 +101,11 @@
     }
 }
 
+.id-icon {
+        width: 2rem;
+        height: 2rem;
+}
+
 .topbar-intro {
     grid-area: topbar-intro;
     display: grid;
@@ -111,6 +116,10 @@
     }
     .intro-utilties {
         grid-area: intro-utlities;
+    }
+    .id-icon {
+        width: 4rem;
+        height: 4rem;
     }
 }
 

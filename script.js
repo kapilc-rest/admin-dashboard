@@ -19,5 +19,5 @@ ids.forEach( id => {
     const idIcon = document.createElement("div");
     idIcon.classList.add("id-icon");
     idIcon.innerHTML = morgan;
-    id.appendChild(idIcon);
+    id.prepend(idIcon);
 })
