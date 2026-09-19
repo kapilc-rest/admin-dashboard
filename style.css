@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
     background-color: rgba(134, 133, 133,.4);
     min-height: 100vh;
@@ -163,24 +164,39 @@
     }
 }
 
+/* @media(max-width: 700px) {
+    .dashboard {
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+} */
 /* =====CARDS===== */
-
-.cards {
+.cards-section {
+    display: grid;
+    grid-template-columns: 70vh 30vh;
+    padding: 2rem 1rem;
     grid-column: 2/3;
     grid-row: 2/3;
+}
+
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    span {
+    grid-column: 1/2;
+    > span {
+        max-height: 1.5rem;
         grid-column: 1/-1;
         font-weight: bold;
     }
     gap: 1rem;
-    padding: 1rem;
     .card {
-        width: 250px;
-        height: 150px;
         padding: 1rem;
-        border: 1px solid brown;
+        background-color: white;
+        border-radius: .5rem;
+        border-left: .5rem solid yellow;
     }
 }
 
