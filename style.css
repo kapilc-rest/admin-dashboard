@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* body {
@@ -120,8 +119,9 @@
 }
 
 .id-icon {
-        width: 2rem;
-        height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    fill: rgb(173, 173, 38);
 }
 
 .topbar-intro {
@@ -133,7 +133,15 @@
         grid-area: intro;
         display: grid;
         grid-template-columns: auto auto 1fr;
-        
+        gap: 1rem;
+        .intro-text {
+            display: grid;
+            align-self: center;
+            font-weight: bold;
+            *:last-child {
+                font-size: 1.5rem;
+            }
+        }
     }
     .intro-utilties {
         grid-area: intro-utlities;
