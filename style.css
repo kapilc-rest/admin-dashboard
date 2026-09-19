@@ -85,6 +85,29 @@
 .cards {
     grid-column: 2/3;
     grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    span {
+        grid-column: 1/-1;
+        font-weight: bold;
+    }
+    gap: 1rem;
+    padding: 1rem;
+    .card {
+        width: 250px;
+        height: 150px;
+        padding: 1rem;
+        border: 1px solid brown;
+    }
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card-text {
+    font-size: .85rem;
 }
 
 .sidebar {
