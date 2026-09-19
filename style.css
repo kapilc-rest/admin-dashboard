@@ -72,7 +72,7 @@
     grid-template-areas: 
         "topbar-nav"
         "topbar-intro";
-    padding: 1rem 2rem;
+    padding: 0 2rem 1rem 2rem;
     box-shadow: 0 4px 6px -2px rgba(0,0,0,.3);
 }
 
