@@ -233,4 +233,21 @@
     .trending {
         grid-area: trending;
     }
+    span {
+        min-height: 1.5rem;
+    }
+}
+
+.trending-profiles, .announcements {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.id {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 1rem;
 }
