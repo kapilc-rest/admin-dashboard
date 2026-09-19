@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* body {
@@ -98,6 +99,23 @@
     }
     .profile-icons {
         grid-area: profile-icons;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        gap: 1rem;
+        > span {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 2fr;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 0 1rem;
+            gap: 1rem;
+        }
+        .icon {
+            justify-self: center;
+        }
     }
 }
 
