@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 150px 1fr;
+    background-color: rgba(134, 133, 133,.4);
 }
 
 .dashboard {
@@ -47,6 +48,38 @@
 .header {
     grid-column: 2/4;
     grid-row: 1/2;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        "topbar-nav"
+        "topbar-intro";
+}
+
+.topbar-nav {
+    grid-area: topbar-nav;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "search-bar profile-icons";
+    .search-bar {
+        grid-area: search-bar;
+    }
+    .profile-icons {
+        grid-area: profile-icons;
+    }
+}
+
+.topbar-intro {
+    grid-area: topbar-intro;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "intro intro-utilties";
+    .intro {
+        grid-area: intro;
+    }
+    .intro-utilties {
+        grid-area: intro-utlities;
+    }
 }
 
 .cards {
