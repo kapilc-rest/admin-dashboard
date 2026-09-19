@@ -186,6 +186,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-column: 1/2;
+    /* sizes each row to content and no extra stretching of space */
+    align-content: start; 
     > span {
         max-height: 1.5rem;
         grid-column: 1/-1;
