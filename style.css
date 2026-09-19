@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .container {
@@ -218,4 +218,16 @@
 
 .sidebar-panel {
     grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "announcement" 
+        "trending";
+    align-content: start; 
+    .announcement {
+        grid-area: announcement;
+    }
+    .trending {
+        grid-area: trending;
+    }
 }
