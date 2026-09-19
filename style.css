@@ -128,7 +128,7 @@
     grid-area: topbar-intro;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-areas: "intro intro-utilties";
+    grid-template-areas: "intro intro-utilities";
     .intro {
         grid-area: intro;
         display: grid;
@@ -138,13 +138,13 @@
             display: grid;
             align-self: center;
             font-weight: bold;
-            *:last-child {
+            > *:last-child {
                 font-size: 1.5rem;
             }
         }
     }
-    .intro-utilties {
-        grid-area: intro-utlities;
+    .intro-utilities {
+        grid-area: intro-utilities;
     }
     .id-icon {
         width: 4rem;
