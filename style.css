@@ -131,6 +131,9 @@
     grid-template-areas: "intro intro-utilties";
     .intro {
         grid-area: intro;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        
     }
     .intro-utilties {
         grid-area: intro-utlities;
