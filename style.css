@@ -3,12 +3,19 @@
     padding: 0;
 }
 
+/* body {
+    height: 100%;
+} */
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 150px 1fr;
     background-color: rgba(134, 133, 133,.4);
+    min-height: 100vh;
 }
+
+/* =====SIDEBAR===== */
 
 .dashboard {
     background-color: rgb(0, 152, 255);
@@ -52,18 +59,15 @@
     fill: currentColor;
 }
 
-.card-icon {
-    width: 1rem;
-    height: 1rem;
-}
-
 .link {
     display: flex;
     align-items: center;
 }
 
+/* =====HEADER===== */
+
 .header {
-    grid-column: 2/4;
+    grid-column: 2/-1;
     grid-row: 1/2;
     background-color: white;
     display: grid;
@@ -71,6 +75,7 @@
     grid-template-areas: 
         "topbar-nav"
         "topbar-intro";
+    padding: 1rem 2rem;
 }
 
 .topbar-nav {
@@ -80,6 +85,16 @@
     grid-template-areas: "search-bar profile-icons";
     .search-bar {
         grid-area: search-bar;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        #search {
+            background-color: rgba(134, 133, 133,.4);
+            border: none;
+            border-radius: 1rem;
+            width: 80%; /*stretches the input*/
+            height: 1.5rem;
+        }
     }
     .profile-icons {
         grid-area: profile-icons;
@@ -98,6 +113,8 @@
         grid-area: intro-utlities;
     }
 }
+
+/* =====CARDS===== */
 
 .cards {
     grid-column: 2/3;
@@ -127,6 +144,11 @@
     font-size: .85rem;
 }
 
-.sidebar {
+.card-icons {
+    width: 1rem;
+    height: 1rem;
+}
+
+.sidebar-panel {
     grid-column: 3/4;
 }
