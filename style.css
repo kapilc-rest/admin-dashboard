@@ -233,8 +233,10 @@
     .trending {
         grid-area: trending;
     }
-    span {
-        min-height: 1.5rem;
+    .announcement, .trending {
+        display: grid;
+        gap: 1rem;
+        align-content: start;
     }
 }
 
