@@ -204,6 +204,7 @@
     /* sizes each row to content and no extra stretching of space */
     align-content: start; 
     gap: 1.5rem;
+    flex: 1;
     .card {
         display: grid;
         grid-template-rows: auto auto;
@@ -211,7 +212,7 @@
         background-color: white;
         border-radius: .5rem;
         border-left: .5rem solid yellow;
-        /* min-height: 150px; */
+        min-height: 180px;
     }
 }
 
@@ -244,8 +245,10 @@
     grid-template-areas: 
         "announcement" 
         "trending";
-    align-content: start; 
+    align-content: stretch; 
     gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
     .announcement {
         grid-area: announcement;
     }
@@ -256,6 +259,7 @@
         display: grid;
         gap: 1rem;
         align-content: start;
+        flex: 1;
     }
 }
 
